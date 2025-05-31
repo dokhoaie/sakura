@@ -1,0 +1,56 @@
+/* page.module.css */
+
+/* Container chính */
+.container {
+    max-width: 600px;
+    background: white;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Tiêu đề chính */
+.title {
+    color: #e91e63;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Phụ đề */
+.subtitle {
+    color: #ba68c8;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* Nội dung chung */
+.text li {
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Nút đặt hàng */
+.orderButton {
+    background-color: #e91e63;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.orderButton:hover {
+    background-color: #d81b60;
+    transform: scale(1.05);
+}
+
+.orderButton:active {
+    background-color: #c2185b;
+    transform: scale(0.95);
+}

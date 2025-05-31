@@ -1,0 +1,150 @@
+/* page.module.css */
+
+.content {
+  padding: 20px;
+  background-color: #fff0f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bố cục chính */
+.noidungchinh {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Trình bày hình ảnh */
+.trinhbay {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.hinhanhsanpham {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Phần bên phải */
+.khungPhai {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tensanpham h1 {
+  font-size: 28px;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+/* Nút lựa chọn */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.optionBlue, .optionOrange {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.optionBlue {
+  background-color: #2196f3;
+}
+
+.optionBlue:hover {
+  background-color: #1976d2;
+}
+
+.optionOrange {
+  background-color: #ff9800;
+}
+
+.optionOrange:hover {
+  background-color: #fb8c00;
+}
+
+.optionBlue small,
+.optionOrange small {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+/* Gacha */
+.gacha strong {
+  color: #9c27b0;
+  font-size: 18px;
+}
+
+/* Nút mua */
+.nutmua {
+  margin-top: 10px;
+}
+
+.nutmua2 {
+  padding: 14px 24px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.nutmua2:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+}
+
+.nutmua2:active {
+  transform: scale(0.95);
+}
+
+/* Gợi ý sản phẩm */
+.noidungphu {
+  margin-top: 30px;
+}
+
+.sanphamgoiy {
+  height: 150px;
+  background-color: #f8bbd0;
+  border-radius: 10px;
+}
+
+/* Mô tả sản phẩm */
+.mota {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+  color: #333;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .noidungchinh {
+    flex-direction: column;
+  }
+
+  .trinhbay, .khungPhai {
+    margin-right: 0;
+  }
+}
